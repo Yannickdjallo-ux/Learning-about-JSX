@@ -1,17 +1,30 @@
 <!DOCTYPE html>
+<!-- Pricing cards demo — static HTML (no React/JSX) -->
+
 <html lang="en">
 <head>
+    <!-- Document metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Typography: Inter (weights 400–700) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Component styles — see styles.css -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Dev badge only — fixed at top; not part of the pricing UI -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing row: cards sit in a horizontal row (same flex row as Hobby & Pro) -->
     <div class="cards-container">
+
+        <!-- Card 1: Hobby (free tier) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +49,11 @@
                     </ul>
                 </div>
             </div>
-            <button class="download-button secondary">Download</button>
+            <!-- Tertiary CTA: neutral fill -->
+            <button class="download-button tertiary">Download</button>
         </div>
+
+        <!-- Card 2: Pro (paid tier) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,8 +83,44 @@
                     </ul>
                 </div>
             </div>
-            <button class="download-button primary">Get Pro</button>
+            <!-- Tertiary CTA: neutral fill -->
+            <button class="download-button tertiary">Get Pro</button>
         </div>
+
+        <!-- Card 3: God-mode (top tier) — copy this block to add another card -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">God-mode</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$99</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Unlimited Agent requests
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team workspaces
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom model routing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Primary CTA: green fill (#00CC66) -->
+            <button class="download-button primary">Get God-mode</button>
+        </div>
+
     </div>
 </body>
 </html>
